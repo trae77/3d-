@@ -43,6 +43,11 @@
       const cube = new THREE.Mesh(geometry, material);
       scene.add(cube);
 
+      const Planegeometry = new THREE.PlaneGeometry( 1, 1 );
+const Planematerial = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide} );
+const plane = new THREE.Mesh( geometry, material );
+scene.add( plane );
+
       camera.position.z = 2;
 
       function animate() {
